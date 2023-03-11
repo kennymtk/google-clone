@@ -5,7 +5,7 @@ export const metadata = {
   title: "Google Clone",
   description: "Google Clone with Next.js",
   icons: {
-    icon: "./assets/GoogleIcon.png",
+    icon: "GoogleIcon.png",
   },
 };
 
