@@ -1,8 +1,9 @@
 import Link from "next/link";
+import PaginationButtons from "./PaginationButtons";
 
 export default function ImageSearchResult({ results }) {
   return (
-    <div className="pb-24 mt-4">
+    <div className="pb-40 sm:pb-24 mt-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-3 space-x-4">
         {results.items.map((result) => (
           <div key={result.link} className="">
@@ -27,6 +28,9 @@ export default function ImageSearchResult({ results }) {
             </div>
           </div>
         ))}
+      </div>
+      <div className="sm:ml-16 mt-4">
+        <PaginationButtons />
       </div>
     </div>
   );
